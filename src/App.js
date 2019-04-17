@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './sass/main.scss';
 import Header from './components/Header/Header';
+import OurStory from './components/pages/Locations/OurStory';
+import Navbar from './components/Navbar/Navbar';
 
 class App extends Component {
   render() {
     return (
-      <div className='App'>
-        <Header />
-      </div>
+      <Router>
+        <div className='App'>
+          <Route exact path='/' component={Header} />
+          <Route path='/ourstory' component={OurStory} />
+        </div>
+      </Router>
     );
   }
 }

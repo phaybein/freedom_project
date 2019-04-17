@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Navbar.scss';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 
 export class Navbar extends Component {
@@ -7,9 +8,9 @@ export class Navbar extends Component {
     return (
       <nav className='navbar navbar-expand-lg navbar-dark'>
         <div className='container'>
-          <a className='navbar-brand' href='#!'>
+          <Link className='navbar-brand' to='/'>
             <img src={Logo} alt='' className='navbar-brand-logo' />
-          </a>
+          </Link>
           <button
             className='navbar-toggler'
             type='button'
@@ -20,21 +21,21 @@ export class Navbar extends Component {
           </button>
           <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
             <div className='navbar-nav ml-auto'>
-              <a className='nav-item nav-link active' href='#!'>
+              <Link className='nav-item nav-link active' to='/'>
                 Home
-              </a>
-              <a className='nav-item nav-link' href='#!'>
+              </Link>
+              {/* <Link className='nav-item nav-link' to='#!'>
                 Party Platters
-              </a>
-              <a className='nav-item nav-link' href='#!'>
-                Locations
-              </a>
-              <a className='nav-item nav-link' href='#!'>
+              </Link> */}
+              <Link className='nav-item nav-link' to='/ourstory'>
+                Our story
+              </Link>
+              {/* <Link className='nav-item nav-link' to='#!'>
                 Rewards
-              </a>
-              <a className='nav-item nav-link' href='#!'>
+              </Link> */}
+              <Link className='nav-item nav-link' to='#!'>
                 Reservation
-              </a>
+              </Link>
             </div>
           </div>
         </div>
