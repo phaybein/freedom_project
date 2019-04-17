@@ -24,12 +24,12 @@ export class Navbar extends Component {
               <Link className='nav-item nav-link active' to='/'>
                 Home
               </Link>
-              {/* <Link className='nav-item nav-link' to='#!'>
-                Party Platters
-              </Link> */}
               <Link className='nav-item nav-link' to='/ourstory'>
                 Our story
               </Link>
+              {/* <Link className='nav-item nav-link' to='#!'>
+                Party Platters
+              </Link> */}
               {/* <Link className='nav-item nav-link' to='#!'>
                 Rewards
               </Link> */}
