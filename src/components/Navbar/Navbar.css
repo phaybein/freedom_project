@@ -1,6 +1,5 @@
-/*
-* Navbar
-*/
+@import '../../sass/main.scss';
+
 .navbar-brand-logo {
   width: 130px;
 }
@@ -11,5 +10,5 @@
 }
 
 .navbar-collapse .navbar-nav .nav-link {
-  color: #f4f4f4;
+  color: $light;
 }

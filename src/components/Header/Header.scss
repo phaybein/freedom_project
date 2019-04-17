@@ -1,3 +1,74 @@
+@import '../../sass/main.scss';
 .header {
+  background: linear-gradient(
+      142deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url(../../assets/header-image.jpg) no-repeat center/cover;
+  color: $light;
   height: 100vh;
+  overflow: hidden;
+
+  .container {
+    height: 100%;
+    position: relative;
+
+    .header__welcome {
+      margin-top: 95px;
+      text-align: right;
+      text-transform: capitalize;
+
+      p {
+        letter-spacing: 10px;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-size: 65px;
+        font-weight: bold;
+        margin-left: auto;
+        max-width: 16ch;
+      }
+    }
+
+    .header__contact {
+      text-align: right;
+      width: 100%;
+      z-index: 1;
+      position: absolute;
+      right: 15px;
+      bottom: 232px;
+
+      .contact {
+        &__book {
+          margin-bottom: 18px;
+        }
+        &__phone {
+          font-size: 32px;
+          margin-bottom: 42px;
+        }
+
+        &__hours {
+          .hours {
+            &__title {
+              font-weight: 500;
+              text-transform: uppercase;
+            }
+
+            &__days {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .header__spice {
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+    }
+  }
 }

@@ -1,3 +1,10 @@
 .header {
+  background: linear-gradient(142deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%), url(../../assets/header-image.jpg) no-repeat center/cover;
+  color: #f4f4f4;
   height: 100vh;
+  position: relative;
+}
+
+.header__welcome {
+  margin-top: 95px;
 }
