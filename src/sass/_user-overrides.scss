@@ -1,0 +1,5 @@
+.container {
+  @include laptop {
+    max-width: 780px;
+  }
+}
